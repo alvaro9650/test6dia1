@@ -1,6 +1,8 @@
 package com.example.alvaro.test6dia1;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        askScores();
         exam = findViewById(R.id.editText);
         practices = findViewById(R.id.editText2);
         attitude = findViewById(R.id.editText3);
@@ -29,6 +32,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         score = findViewById(R.id.textView);
+    }
+
+    private void askScores() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(R.string.ask_scores);
+        builder.setNeutralButton(R.string.ok, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 
     private Float getNota() {

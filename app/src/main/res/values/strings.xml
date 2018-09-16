@@ -8,4 +8,6 @@
     <string name="term_2">2º trimestre</string>
     <string name="integrating_project">Proyecto integrador</string>
     <string name="calculate">Calcular</string>
+    <string name="ask_scores">Introduce tus notas:</string>
+    <string name="ok">De acuerdo</string>
 </resources>
