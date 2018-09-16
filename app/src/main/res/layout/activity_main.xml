@@ -91,6 +91,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/term_1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/term_2" />
     </RadioGroup>
 
 </android.support.constraint.ConstraintLayout>
