@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     TextView score;
     Float technicalScore;
     Spinner spinner;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         });
         score = findViewById(R.id.textView);
         spinner = findViewById(R.id.spinner);
-        // Create an ArrayAdapter using the string array and a default spinner layout
         SpinnerAdapter adapter = ArrayAdapter.createFromResource(this, R.array.courses, android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);
     }
